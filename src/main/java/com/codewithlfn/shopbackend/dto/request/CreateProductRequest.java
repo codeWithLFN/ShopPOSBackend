@@ -1,6 +1,7 @@
 package com.codewithlfn.shopbackend.dto.request;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,6 +23,6 @@ public class CreateProductRequest {
     @Positive(message = "Quantity cannot be negative or null")
     private int quantity;
     @Positive(message = "Price must be positive")
-    @NotBlank(message = "Price cannot be null")
+    @NotNull(message = "Price cannot be null")
     private BigDecimal price;
 }

@@ -22,7 +22,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public List<ProductResponse> getAllProducts() {
         ProductResponse product = ProductResponse.builder()
-                .productId("1")
+                .productId(1)
                 .name("Sample Product")
                 .description("This is a sample product")
                 .quantity(10)
@@ -30,7 +30,7 @@ public class ProductServiceImpl implements ProductService {
                 .build();
 
         ProductResponse product2 = ProductResponse.builder()
-                .productId("2")
+                .productId(2)
                 .name("Another Product")
                 .description("This is another sample product")
                 .quantity(5)

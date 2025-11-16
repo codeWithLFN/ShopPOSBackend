@@ -17,7 +17,7 @@ public class ProductEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer productId;
     @Column(nullable = false, length = 255)
-        private String name;
+    private String name;
     @Column(columnDefinition = "TEXT")
     private String description;
     private Integer stockQuantity;
