@@ -61,7 +61,7 @@ public class ControllerAdvisor extends ResponseEntityExceptionHandler {
         String errorMessage = null;
         for (var parameterValidationResult : ex.getParameterValidationResults()) {
             for (var messageSourceResolvable : parameterValidationResult.getResolvableErrors()) {
-                if(errorMessage == null) {
+                if (errorMessage == null) {
                     errorMessage = messageSourceResolvable.getDefaultMessage();
                 } else {
                     errorMessage = String.format("%s | %s", errorMessage, messageSourceResolvable.getDefaultMessage());
